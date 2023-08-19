@@ -1,0 +1,6 @@
+db.customers.find({
+    $or: [
+        { Phone: { $exists: false } },
+        { Phone: null }
+    ]
+});
