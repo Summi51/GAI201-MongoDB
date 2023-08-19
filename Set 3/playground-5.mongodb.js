@@ -2,6 +2,7 @@
 
 // Calculate the average ride_time of all rides
 db.Rides.aggregate([
+  
   {
     $group: {
       _id: null,
